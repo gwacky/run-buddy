@@ -1,8 +1,8 @@
 /* This is how to comment */
 :root {
-    --primary-color: #fce138:var(--primary-color);
-    --secondary-color: #024e76:var(--secondary-color);
-    --tertiary-color: #39a6b2:var(--tertiary-color);
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
 }
 * {
     margin: 0;
@@ -181,12 +181,13 @@ section {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: var(--secondary-color);
+    background: #024e76;
     position: absolute;
     left: -29px;
     top: -3px;
-    background-image: radial-gradient(circle, #39a6b3, var(--secondary-color));
-}
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+
+  }
 .checkbox-wrapper label::after {
     content: "";
     height: 6px;
@@ -197,7 +198,8 @@ section {
     left: -26px;
     top: 1px;
     transform: rotate(-58deg);
-}
+
+  }
 .checkbox-wrapper input + label::after, 
 .radio-wrapper input + label::after {
     content: none;
